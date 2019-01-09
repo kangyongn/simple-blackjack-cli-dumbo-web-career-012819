@@ -41,6 +41,7 @@ def hit? (total)
   else
     invalid_command
     prompt_user
+    total
   end
 end
 
@@ -53,6 +54,13 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  hand = initial_round
+  
+  until hand > 21
+    hand = hit? (hand)
+  end
+  
+  end_game
 end
     
