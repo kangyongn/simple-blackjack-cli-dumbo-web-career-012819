@@ -23,11 +23,19 @@ def end_game (total)
 end
 
 def initial_round
-  # code #initial_round here
+  initial_total = 0
+  # first card.
+  initial_total += deal_card
+  
+  # second card.
+  initial_total += deal_card
+  
+  display_card_total (initial_total)
 end
 
-def hit?
-  # code hit? here
+def hit? (total)
+  prompt_user
+  get_user_input
 end
 
 def invalid_command
