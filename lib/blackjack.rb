@@ -38,6 +38,12 @@ def hit? (total)
   answer = get_user_input
   
   if answer == "s"
+    end_game
+  elsif answer == "h"
+    deal_card
+  else
+    invalid_command
+  end
 end
 
 def invalid_command
