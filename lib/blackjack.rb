@@ -37,7 +37,7 @@ def hit? (total)
   if answer == "s"
     total
   elsif answer == "h"
-    deal_card
+    total += deal_card
   else
     invalid_command
     prompt_user
