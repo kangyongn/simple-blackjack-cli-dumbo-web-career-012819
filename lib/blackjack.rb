@@ -30,7 +30,7 @@ def initial_round
   initial_total
 end
 
-def hit? (total)
+def hit?
   prompt_user
   answer = get_user_input
   
