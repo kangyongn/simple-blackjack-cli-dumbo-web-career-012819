@@ -61,6 +61,6 @@ def runner
     hand = hit? (hand)
   end
   
-  end_game
+  end_game (hand)
 end
     
